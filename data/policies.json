@@ -1,0 +1,202 @@
+[
+  {
+    "plan_id": "AUT-01",
+    "insurer": "Aegis Mutual",
+    "policy_type": "auto",
+    "plan_name": "Aegis Auto Basic",
+    "rate_per_1000": 2.9,
+    "annual_fee": 21,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "AUT-02",
+    "insurer": "Northwind Assurance",
+    "policy_type": "auto",
+    "plan_name": "Northwind Auto Plus",
+    "rate_per_1000": 3.04,
+    "annual_fee": 35,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "AUT-03",
+    "insurer": "Bluepeak Insurance",
+    "policy_type": "auto",
+    "plan_name": "Bluepeak Auto Basic",
+    "rate_per_1000": 2.31,
+    "annual_fee": 26,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "AUT-04",
+    "insurer": "Cedar & Stone",
+    "policy_type": "auto",
+    "plan_name": "Cedar Auto Plus",
+    "rate_per_1000": 2.95,
+    "annual_fee": 54,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "AUT-05",
+    "insurer": "Harbor Shield",
+    "policy_type": "auto",
+    "plan_name": "Harbor Auto Basic",
+    "rate_per_1000": 2.12,
+    "annual_fee": 47,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "HOM-01",
+    "insurer": "Aegis Mutual",
+    "policy_type": "home",
+    "plan_name": "Aegis Home Basic",
+    "rate_per_1000": 1.13,
+    "annual_fee": 30,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "HOM-02",
+    "insurer": "Northwind Assurance",
+    "policy_type": "home",
+    "plan_name": "Northwind Home Plus",
+    "rate_per_1000": 1.3,
+    "annual_fee": 57,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "HOM-03",
+    "insurer": "Bluepeak Insurance",
+    "policy_type": "home",
+    "plan_name": "Bluepeak Home Basic",
+    "rate_per_1000": 1.64,
+    "annual_fee": 60,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "HOM-04",
+    "insurer": "Cedar & Stone",
+    "policy_type": "home",
+    "plan_name": "Cedar Home Plus",
+    "rate_per_1000": 1.28,
+    "annual_fee": 66,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "HOM-05",
+    "insurer": "Harbor Shield",
+    "policy_type": "home",
+    "plan_name": "Harbor Home Basic",
+    "rate_per_1000": 1.73,
+    "annual_fee": 51,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "TER-01",
+    "insurer": "Aegis Mutual",
+    "policy_type": "term_life",
+    "plan_name": "Aegis Term Life Basic",
+    "rate_per_1000": 1.05,
+    "annual_fee": 67,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "TER-02",
+    "insurer": "Northwind Assurance",
+    "policy_type": "term_life",
+    "plan_name": "Northwind Term Life Plus",
+    "rate_per_1000": 1.09,
+    "annual_fee": 30,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "TER-03",
+    "insurer": "Bluepeak Insurance",
+    "policy_type": "term_life",
+    "plan_name": "Bluepeak Term Life Basic",
+    "rate_per_1000": 1.43,
+    "annual_fee": 40,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "TER-04",
+    "insurer": "Cedar & Stone",
+    "policy_type": "term_life",
+    "plan_name": "Cedar Term Life Plus",
+    "rate_per_1000": 1.39,
+    "annual_fee": 51,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "TER-05",
+    "insurer": "Harbor Shield",
+    "policy_type": "term_life",
+    "plan_name": "Harbor Term Life Basic",
+    "rate_per_1000": 1.09,
+    "annual_fee": 43,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "HEA-01",
+    "insurer": "Aegis Mutual",
+    "policy_type": "health",
+    "plan_name": "Aegis Health Basic",
+    "rate_per_1000": 6.39,
+    "annual_fee": 83,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "HEA-02",
+    "insurer": "Northwind Assurance",
+    "policy_type": "health",
+    "plan_name": "Northwind Health Plus",
+    "rate_per_1000": 4.26,
+    "annual_fee": 88,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "HEA-03",
+    "insurer": "Bluepeak Insurance",
+    "policy_type": "health",
+    "plan_name": "Bluepeak Health Basic",
+    "rate_per_1000": 4.24,
+    "annual_fee": 84,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "HEA-04",
+    "insurer": "Cedar & Stone",
+    "policy_type": "health",
+    "plan_name": "Cedar Health Plus",
+    "rate_per_1000": 5.51,
+    "annual_fee": 45,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  },
+  {
+    "plan_id": "HEA-05",
+    "insurer": "Harbor Shield",
+    "policy_type": "health",
+    "plan_name": "Harbor Health Basic",
+    "rate_per_1000": 5.82,
+    "annual_fee": 108,
+    "min_coverage": 10000,
+    "max_coverage": 2000000
+  }
+]

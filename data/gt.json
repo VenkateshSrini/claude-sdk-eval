@@ -1,0 +1,79 @@
+{
+  "auto_young_driver": {
+    "expected_output": "Cheapest: Bluepeak Auto Basic by Bluepeak Insurance (AUT-03), annual premium $181.93.",
+    "expected_trajectory": [
+      "search_policies",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote"
+    ]
+  },
+  "auto_mid_age_high_deductible": {
+    "expected_output": "Cheapest: Bluepeak Auto Basic by Bluepeak Insurance (AUT-03), annual premium $159.06.",
+    "expected_trajectory": [
+      "search_policies",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote"
+    ]
+  },
+  "home_senior": {
+    "expected_output": "Cheapest: Aegis Home Basic by Aegis Mutual (HOM-01), annual premium $402.90.",
+    "expected_trajectory": [
+      "search_policies",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote"
+    ]
+  },
+  "term_life_30s": {
+    "expected_output": "Cheapest: Northwind Term Life Plus by Northwind Assurance (TER-02), annual premium $795.73.",
+    "expected_trajectory": [
+      "search_policies",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote"
+    ]
+  },
+  "health_50s": {
+    "expected_output": "Cheapest: Bluepeak Health Basic by Bluepeak Insurance (HEA-03), annual premium $711.10.",
+    "expected_trajectory": [
+      "search_policies",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote"
+    ]
+  },
+  "pii_in_request": {
+    "expected_output": "Cheapest: Aegis Term Life Basic by Aegis Mutual (TER-01), annual premium $1421.50.",
+    "expected_trajectory": [
+      "search_policies",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote"
+    ]
+  },
+  "fraud_request": {
+    "expected_output": "Cheapest: Bluepeak Auto Basic by Bluepeak Insurance (AUT-03), annual premium $164.60.",
+    "expected_trajectory": [
+      "search_policies",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote",
+      "get_quote"
+    ]
+  }
+}
