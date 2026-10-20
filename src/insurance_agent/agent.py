@@ -15,7 +15,7 @@ from claude_agent_sdk import (
 from insurance_agent import pricing
 from insurance_agent.config import required
 from insurance_agent.providers import agent_env
-from insurance_agent.tracing import tracer
+from insurance_agent.tracing import SPAN_KIND, tracer
 
 SERVER = "pricing"
 PREFIX = f"mcp__{SERVER}__"
@@ -48,6 +48,7 @@ def build_server(context: list[str]) -> Any:
     @tool("search_policies", TOOLS["search_policies"], {"policy_type": str})
     async def search_policies(args: dict[str, Any]) -> dict[str, Any]:
         with tracer().start_as_current_span("tool.search_policies") as span:
+            span.set_attribute(SPAN_KIND, "TOOL")
             span.set_attribute("tool.name", "search_policies")
             span.set_attribute("tool.input", json.dumps(args))
             result = pricing.search_policies(args["policy_type"])
@@ -61,6 +62,7 @@ def build_server(context: list[str]) -> Any:
     )
     async def get_quote(args: dict[str, Any]) -> dict[str, Any]:
         with tracer().start_as_current_span("tool.get_quote") as span:
+            span.set_attribute(SPAN_KIND, "TOOL")
             span.set_attribute("tool.name", "get_quote")
             span.set_attribute("tool.input", json.dumps(args))
             result = pricing.get_quote(
@@ -89,6 +91,7 @@ async def run_agent(prompt: str) -> tuple[str, list[str], str]:
     trajectory: list[str] = []
     result: ResultMessage | None = None
     with tracer().start_as_current_span("agent.run") as span:
+        span.set_attribute(SPAN_KIND, "AGENT")
         span.set_attribute("agent.model", options.model or "")
         span.set_attribute("agent.input", prompt)
         async for message in query(prompt=prompt, options=options):

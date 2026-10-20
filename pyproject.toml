@@ -5,7 +5,9 @@ description = "Insurance pricing agent (Claude Agent SDK) evaluated with Strands
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "arize-otel>=0.14.1",
     "claude-agent-sdk>=0.2.168",
+    "opentelemetry-exporter-otlp-proto-http>=1.45.1",
     "opentelemetry-sdk>=1.30.0",
     "python-dotenv>=1.2.4",
     "strands-agents-evals>=1.6.0",
