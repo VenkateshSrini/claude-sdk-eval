@@ -1,6 +1,7 @@
 import asyncio
 import io
 import json
+import os
 import sys
 from typing import Any
 
@@ -77,4 +78,10 @@ async def evaluate() -> None:
 def main() -> None:
     if isinstance(sys.stdout, io.TextIOWrapper):
         sys.stdout.reconfigure(encoding="utf-8")  # the report display prints emoji
-    asyncio.run(evaluate())
+    loop = asyncio.new_event_loop()
+    loop.run_until_complete(evaluate())
+    # Don't close the loop: on Windows (Python 3.15) the Proactor loop's close() blocks forever on
+    # I/O left pending by the Claude CLI subprocess. The report is already written, so exit directly.
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(0)

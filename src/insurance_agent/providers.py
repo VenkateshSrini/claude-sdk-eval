@@ -25,7 +25,9 @@ def judge_model() -> Model:
     if _provider() == "bedrock":
         return BedrockModel(model_id=model_id, region_name=required("AWS_REGION"))
     return AnthropicModel(
-        client_args={"api_key": required("ANTHROPIC_API_KEY")}, model_id=model_id, max_tokens=2048
+        client_args={"api_key": required("ANTHROPIC_API_KEY"), "timeout": 30.0, "max_retries": 3},
+        model_id=model_id,
+        max_tokens=2048,
     )
 
 
